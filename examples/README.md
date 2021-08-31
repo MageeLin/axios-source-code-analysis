@@ -1,6 +1,6 @@
-# axios examples
+# axios 实例
 
-To run the examples:
+执行以下步骤来运行实例:
 
 1. `git clone https://github.com/axios/axios.git`
 2. `cd axios`

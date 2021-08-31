@@ -1,23 +1,23 @@
 # axios // adapters
 
-The modules under `adapters/` are modules that handle dispatching a request and settling a returned `Promise` once a response is received.
+`adapters/` 下的模块负责发送请求并在收到响应后处理返回的 `Promise` 。
 
-## Example
+## 实例
 
 ```js
 var settle = require('./../core/settle');
 
 module.exports = function myAdapter(config) {
-  // At this point:
-  //  - config has been merged with defaults
-  //  - request transformers have already run
-  //  - request interceptors have already run
-  
-  // Make the request using config provided
-  // Upon response settle the Promise
+  // 在此时：
 
-  return new Promise(function(resolve, reject) {
-  
+  // - 配置已与默认配置合并
+  // - 请求转换器已经执行
+  // - 请求拦截器已经执行
+
+  // 使用提供的配置发出请求
+  // 根据响应来 settle Promise
+
+  return new Promise(function (resolve, reject) {
     var response = {
       data: responseData,
       status: request.status,
@@ -29,9 +29,9 @@ module.exports = function myAdapter(config) {
 
     settle(resolve, reject, response);
 
-    // From here:
-    //  - response transformers will run
-    //  - response interceptors will run
+    // 从这里开始:
+    //  - 响应转换器开始执行
+    //  - 响应拦截器开始执行
   });
 }
 ```

@@ -1,8 +1,8 @@
-# Cookbook
+# 指南
 
-This cookbook contains recipes for some commonly requested features.
+这里有一些常用功能的指南。
 
-In order to keep axios as lightweight as possible, it is often necessary to say no to feature requests. Many of these use cases can be supported by augmenting axios with other libraries.
+为了让 axios 尽可能轻量级，通常需要拒绝各种功能请求。许多功能都可以通过使用其他库扩充 axios 来支持。
 
 ### Promise.prototype.done
 

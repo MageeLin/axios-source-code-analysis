@@ -1,22 +1,20 @@
-# Collaborator Guide
+# 贡献指南
 
-As a collaborator, you will be involved with axios with some administrative responsibilities. This guide will help you understand your role and the responsibilities that come with being a collaborator.
+作为贡献者，你将参与 axios 并承担一些管理职责。本指南将帮助你了解作为贡献者的角色和责任。
 
-1. __Adhere to and help enforce the Code of Conduct.__ It is expected that you have read the [code of conduct](https://github.com/axios/axios/blob/master/CODE_OF_CONDUCT.md) and that you agree to live by it. This community should be friendly and welcoming.
+1. **遵守并协助执行行为准则。** 你应当已阅读 [行为准则](https://github.com/axios/axios/blob/master/CODE_OF_CONDUCT.md) 并同意遵守该准则。这个社区应该是友好和热情的。
+2. **将 issue 进行分类。** 作为贡献者，你可以帮助整理报告的 issue。issue 有 bug、回归、功能请求、问题等各种类型。给 issue 标记适当的标签并按需回应。如果这是一个合理的请求就解决它，否则就关闭该 issue，并在评论中提供如何寻求支持的建议。如果一个 issue 已经超过一个星期不活跃（即 issue 的所有者没有回复你），关闭问题并表明过期 issue 已经关闭；如果需要可以随时重新打开。如果 issue 需要更改代码，鼓励 issue 所有者提交 PR。对于比较简单的代码更改，添加一个非常简单和详细的修改清单，贴上“仅限初学者”的标签，鼓励新手开源参与。
+3. **回答问题。** 你不应该提供与项目不相关 issue 的答案（例如指导别人如何使用 JavaScript 等）。如果 issue 与项目无关，请关闭 issue。如果 issue 来源于糟糕的文档，请更新文档并添加代码示例。无论如何请尽量提供帮助，并记住没有愚蠢的问题。
+4. **协助 PR。** 通过鼓励贡献者为他们自己的问题提供 PR，理想情况下，你的大部分精力应该集中在贡献者为自己的 issue 提供的 PR 上。在你查看 PR 时，请记住一些下列要点。
 
-1. __Triage issues.__ As a collaborator, you may help sort through the issues that are reported. Issues vary from bugs, regressions, feature requests, questions, etc. Apply the appropriate label(s) and respond as needed. If it is a legitimate request, please address it, otherwise feel free to close the issue and include a comment with a suggestion on where to find support. If an issue has been inactive for more than a week (i.e., the owner of the issue hasn’t responded to you), close the issue with a note indicating stales issues are closed; it can always be reopened if needed. In the case of issues that require a code change, encourage the owner to submit a PR. For less complex code changes, add a very simple and detailed checklist, apply the “first-timers-only” label, and encourage a newcomer to open source to get involved.
+- 修复 bug 时：PR 是否解决了问题，并且没有引入任何回归错误？
+- 实现一个功能时：该功能是否适合 axios 的范围？
+- 删除功能时：是否正确弃用并发出警告？
+- 在引入功能时：API 是否可预测？
+- 新代码是否适用于所有支持的平台/浏览器？
+- 是否通过 CI 进行了测试和 linting ？
+- 是否测试验证过所做的更改？
 
-1. __Answer questions.__ It is not expected that you provide answers to questions that aren’t relevant, nor do you need to mentor people on how to use JavaScript, etc. If the question is not directly about the module, please close the issue. If the question stems from poor documentation, please update the docs and consider adding a code example. In any event try to be helpful and remember that there’s no such thing as a stupid question.
+5. **修复 bug 和实现功能。** 当 bug 需要修复或功能需要实现，但等待 PR 已经来不及时，你可以自己来更改代码。你应该自己提交一个 PR 并让至少一个其他贡献者检查它。在推送代码时，请考虑第 4 点中的要点。
 
-1. __Assist with PRs.__ By encouraging contributors to supply a PR for their own issue this is ideally where most of your attention will be focused. Keep a few things in mind as you review PRs.
-	- When fixing a bug: does the PR adequately solve the problem without introducing any regressions?
-	- When implementing a feature: does the feature fit within the scope of axios?
-	- When removing functionality: is it properly deprecated with a warning?
-	- When introducing functionality: is the API predictable?
-	- Does the new code work for all supported platforms/browsers?
-	- Do the tests and linting pass CI?
-	- Are there tests to validate the changes that have been made?
-
-1. __Fix bugs and implement features.__ When things need to be fixed or implemented, and a PR can’t wait, you may do things yourself. You should still submit a PR yourself and get it checked off by at least one other contributor. Keep the points from number 4 in consideration as you push your code.
-
-Thank you again for your help as a collaborator and in making axios community great! If you have any questions or need any assistance, please feel free to contact another collaborator or the owner.
+再次感谢你作为贡献者提供的帮助，这让 axios 社区变得更好！如果你有任何问题或需要任何帮助，请随时联系其他贡献者或作者。
