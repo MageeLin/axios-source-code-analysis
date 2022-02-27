@@ -2,7 +2,7 @@
 
 这里有一些常用功能的指南。
 
-为了让 axios 尽可能轻量级，通常需要拒绝各种功能请求。许多功能都可以通过使用其他库扩充 axios 来支持。
+为了让 axios 尽可能轻量级，通常需要拒绝各种合并请求。许多功能都可以通过使用其他库扩充 axios 来支持。
 
 ### Promise.prototype.done
 
@@ -40,7 +40,7 @@ axios
     return response;
   })
   .finally(() => {
-    console.log('this will always be called');
+    console.log('本行一直会被调用');
   });
 ```
 

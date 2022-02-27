@@ -27,11 +27,8 @@ Commit 消息应该是基于动词开头的，使用以下模式：
 
 - `grunt test` 运行 jasmine 和 mocha 测试
 - `grunt build` 运行 webpack 并打包源码
-
 - `grunt version` 准备发布代码
-
 - `grunt watch:test` 观察变化并运行 `test`
-
 - `grunt watch:build` 监视更改并运行 `build`
 
 请不要在你的PR中包含对 `dist/` 目录的更改。该目录应该只在发布新版本时更新。
